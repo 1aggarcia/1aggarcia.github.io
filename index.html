@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/style.css">
+    <script 
+		src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		crossorigin="anonymous">
+	</script>
+    <script src="lib/scroller.js" defer></script>
+
+    <title>Apolo Garcia</title>
+</head>
+<body>
+    <div id="bodyWrapper">
+    <header>
+        <h1>Apolo Garcia</h1>
+        <div>
+            <a href="https://github.com/1aggarcia" target="_blank">
+                <i class="fa fa-github" style="font-size: 1.3em;">&nbsp;</i>1aggarcia
+            </a>
+            <i class="spacer"></i>
+            <a href="https://www.linkedin.com/in/apolo-garcia/" target="_blank">
+                <i class="fa fa-linkedin" style="font-size: 1.3em;">&nbsp;</i>apolo-garcia
+            </a>
+        </div>
+        <p>Fourth year Computer Science student at the University of Washington</p>
+        <nav>
+            <a href="#githubPages">GitHub Pages</a>
+            <a href="#webApps">Other Web Apps</a>
+            <a href="#publicRepos">Public Repositores</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2 id="githubPages">GitHub Pages</h2>
+
+        <a class="project" href="https://1aggarcia.github.io/snake/" target="_blank">
+            <img src="images/snake.png" alt="Screenshot of Snake game"/>
+            <div class="desc">
+                <h3>HTML Snake</h3>
+                <i>2022</i>
+                <p>
+                    Basic playable snake game with a global arcade-style leader board
+                </p>
+                <p>Made with vanilla JavaScript</p>
+            </div>
+        </a>
+        <a class="project" href="https://1aggarcia.github.io/doomsday-rule/" target="_blank">
+            <img src="images/doomsday.png" alt="Screenshot of Doomsday Rule webpage"/>
+            <div class="desc">
+                <h3>Doomsday Rule Calculator</h3>
+                <i>2020</i>
+                <p>
+                    Learn to calculate the day of the week for any date (like March 29th, 2024)
+                    in your head with an interactive tool to practice.
+                </p>
+                <p>
+                    Vanilla JavaScript once again with some jQuery. When I made this I was just
+                    learning the basics of web development.
+                </p>
+            </div>
+        </a>
+    </section>
+
+    <section>
+        <h2 id="webApps">Other Wep Apps</h2>
+        <a class="project" href="https://linkstretch.vercel.app/" target="_blank">
+            <img src="images/linkstretch.png" alt="Screenshot of LinkStretch"/>
+            <div class="desc">
+                <h3>LinkStretch</h3>
+                <i>2024</i>
+                <p>
+                    A joke concept I turned into a real service to encode
+                    links as much longer links that are completely incomprehsible
+                </p>
+                <p>Uses a React frontend, Flask backend</p>
+            </div>
+        </a>
+    </section>
+
+    <section>
+        <h2 id="publicRepos">Public Repositories</h2>
+
+        <a class="project" href="https://github.com/1aggarcia/locked-notes" target="_blank">
+            <img src="images/locked-notes.png" alt="Screenshots of the Locked Notes app"/>
+            <div class="desc">
+                <h3>Locked Notes</h3>
+                <i>2023</i>
+                <p>
+                    Mobile App to edit and store notes,
+                    secured and protected by a numerical PIN
+                </p>
+                <p>Created using the Expo Go framework for React Native</p>
+            </div>
+        </a>
+        <a class="project" href="https://github.com/1aggarcia/cube-playground" target="_blank">
+            <img src="images/cube-playground.png" alt="Screenshot of Cube Playground"/>
+            <div class="desc">
+                <h3>Rubik's Cube Playground</h3>
+                <i>2023</i>
+                <p>
+                    Desktop App which can generate Rubik's cubes of any dimension for
+                    exploration with user inputted algorithms. 3x3, 2x2, 50x50, as
+                    much as your CPU can handle.
+                </p>
+                <p>Created in Python using various libraries like TKinter and Pillow</p>
+            </div>
+        </a>
+    </section>
+
+    <section>
+    <h2>... and more to come in the future</h2>
+    </section>
+
+    <footer>
+        <p><a href="mailto: apolo270garcia@gmail.com" target="_blank">
+            <i class="fa fa-envelope" aria-hidden="true">&nbsp;</i>apolo270garcia@gmail.com
+        </a></p>
+        <p>Copyright &copy; <span id="copyright">2024</span> Apolo Garcia</p>
+    </footer>
+    </div>
+
+    <script>
+        const currentYear = new Date().getUTCFullYear();
+        document.getElementById("copyright").textContent = currentYear;
+    </script>
+</body>
+</html>
