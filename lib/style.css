@@ -3,10 +3,12 @@
     --vibrant-blue: rgb(45, 203, 255);
     --dark-blue: rgb(31, 156, 198);
     --dark-purple: rgb(35, 10, 71);
+    --off-gray: #bbbbbb;
 }
 
 body {
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/large-gradient-bg.jpg');
+    background-color: var(--dark-purple);
     background-size: cover;
     background-repeat: no-repeat;
     overscroll-behavior-y: none;
@@ -120,6 +122,11 @@ nav a:hover {
 
 .spacer {
     padding: 0px 1em;
+}
+
+#bgLink {
+    color: var(--off-gray);
+    font-size: 0.9em;
 }
 
 @media only screen and (max-width: 650px) {
